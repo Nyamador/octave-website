@@ -8,7 +8,7 @@ export default function Home() {
 	return (
 		<div>
 			<Head>
-				<title>Octave Systems | Coming Soon</title>
+				<title>Octave Systems | Homepage </title>
 				<link rel="icon" href="/favicon.ico" />
 				<link
 					rel="preconnect"

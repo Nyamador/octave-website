@@ -7,12 +7,17 @@ const Navbar = () => {
 			<div className="flex flex-row items-center">
 				<Image
 					src="/svg/octave_logo.svg"
-					height="40px"
-					width="40px"
+					height="20px"
+					width="20px"
 				/>
 
 				<p className="ml-2 font-bold">Octave Systems</p>
 			</div>
+
+			<button className="flex flex-row items-center ml-auto">
+				Menu &nbsp;
+				<Image src="/svg/menu.svg" height="16px" width="22px" />
+			</button>
 		</nav>
 	);
 };
