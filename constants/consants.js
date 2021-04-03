@@ -89,3 +89,32 @@ export const industryImages = [
 		name: 'Travel',
 	},
 ];
+
+const TEAMS_ROUTE = '/svg/team/';
+export const teamImages = [
+	{
+		url: `${TEAMS_ROUTE}desmondaf.svg`,
+		id: 1,
+		name: 'Desmond Afedzie',
+	},
+	{
+		url: `${TEAMS_ROUTE}benson.svg`,
+		id: 2,
+		name: 'Damilola Randolph',
+	},
+	{
+		url: `${TEAMS_ROUTE}justin.svg`,
+		id: 3,
+		name: 'Justin  Amehunke',
+	},
+	{
+		url: `${TEAMS_ROUTE}leslie.svg`,
+		id: 4,
+		name: 'Leslie Wahiermeh',
+	},
+	{
+		url: `${TEAMS_ROUTE}desmond.svg`,
+		id: 5,
+		name: 'Desmond Nyamador',
+	},
+];

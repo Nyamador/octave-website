@@ -9,6 +9,7 @@ module.exports = {
 			},
 			backgroundImage: (theme) => ({
 				'hero-pattern': "url('/svg/pattern.svg')",
+				'teams-pattern': "url('/svg/pattern_light.svg')",
 			}),
 		},
 	},

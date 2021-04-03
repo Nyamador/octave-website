@@ -16,10 +16,15 @@ const TechStack = () => {
 				notch solutions including the following.
 			</p>
 
-			<div>
-				{techStackImages.map((image) => (
-					<Tech key={image.id} url={image.url} />
-				))}
+			<div className="overflow-hidden">
+				<div className="flex flex-row w-full">
+					{techStackImages.map((image) => (
+						<Tech key={image.id} url={image.url} />
+					))}
+					{techStackImages.map((image) => (
+						<Tech key={image.id} url={image.url} />
+					))}
+				</div>
 			</div>
 		</div>
 	);
