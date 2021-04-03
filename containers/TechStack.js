@@ -9,7 +9,7 @@ const Tech = ({ url }) => {
 
 const TechStack = () => {
 	return (
-		<div className="w-full h-screen text-purple p-4 md:p-6 md:pt-20">
+		<div className="w-full text-purple p-4 md:p-6 md:pt-20">
 			<h2 className="text-4xl md:text-6xl">We work with...</h2>
 			<p className="pt-4">
 				We work with modern and scalable technologies to deliver top
