@@ -5,7 +5,7 @@ module.exports = {
 		extend: {
 			colors: {
 				purple: '#240127',
-				lightPurple: '#F1B9FF',
+				lightPurple: '#F9E5F9',
 			},
 			backgroundImage: (theme) => ({
 				'hero-pattern': "url('/svg/pattern.svg')",
