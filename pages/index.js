@@ -3,6 +3,9 @@ import Image from 'next/image';
 
 import HeroSection from '../containers/HeroSection';
 import TechStack from '../containers/TechStack';
+import DevCycle from '../containers/DevCycle';
+import Industries from '../containers/Industries';
+import Team from '../containers/Team';
 
 export default function Home() {
 	return (
@@ -23,6 +26,9 @@ export default function Home() {
 			<main>
 				<HeroSection />
 				<TechStack />
+				<DevCycle />
+				<Industries />
+				<Team />
 			</main>
 		</div>
 	);
