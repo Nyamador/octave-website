@@ -14,7 +14,7 @@ const TeamImage = ({ url, name }) => {
 
 const Team = () => {
 	return (
-		<div className="w-full text-purple p-4 md:p-6 md:pt-20 bg-lightPurple bg-purple bg-teams-pattern bg-cover bg-center">
+		<div className="w-full text-purple p-4 md:p-6 md:pt-20 md:pb-20 bg-lightPurple bg-purple bg-teams-pattern bg-cover bg-center">
 			<h3 className="text-4xl md:text-6xl">Our Team</h3>
 			<p className="pt-4 mb-6">
 				With several offices in Ukraine and beyond, you’re more than

@@ -10,7 +10,7 @@ const HeroSection = () => {
 		<div className="bg-purple bg-hero-pattern bg-cover bg-center">
 			<Navbar />
 			<div className="p-4 md:p-6 h-full md:h-screen md:flex md:flex-row">
-				<section className="md:w-6/12">
+				<section className="md:w-6/12 m-auto">
 					<p className="font-bold text-grey-200">WE DESIGN UX/UI</p>
 					<h1 className="text-4xl md:text-6xl mb-4 mt-2">
 						Building digital <br></br> products, brands, <br></br> and

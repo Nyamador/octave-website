@@ -6,6 +6,8 @@ import TechStack from '../containers/TechStack';
 import DevCycle from '../containers/DevCycle';
 import Industries from '../containers/Industries';
 import Team from '../containers/Team';
+import Testimonials from '../containers/Testimonials';
+import Footer from '../containers/Footer';
 
 export default function Home() {
 	return (
@@ -29,6 +31,8 @@ export default function Home() {
 				<DevCycle />
 				<Industries />
 				<Team />
+				<Testimonials />
+				<Footer />
 			</main>
 		</div>
 	);
