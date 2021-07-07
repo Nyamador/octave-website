@@ -1,7 +1,9 @@
+import { useState, useEffect } from 'react';
 import Head from 'next/head';
 import Image from 'next/image';
 
 import HeroSection from '../containers/HeroSection';
+import SideMenu from '../containers/SideMenu'
 import TechStack from '../containers/TechStack';
 import DevCycle from '../containers/DevCycle';
 import Industries from '../containers/Industries';
@@ -10,6 +12,16 @@ import Testimonials from '../containers/Testimonials';
 import Footer from '../containers/Footer';
 
 export default function Home() {
+	const [menuOpened, setMenuOpened] = useState(false)
+
+	useEffect(() => {
+		if (menuOpened) {
+			document.classList = "overflow-hidden"
+		} else {
+			document.classList = ""
+		}
+	}, [menuOpened])
+
 	return (
 		<div>
 			<Head>
@@ -26,7 +38,7 @@ export default function Home() {
 			</Head>
 
 			<main>
-				<HeroSection />
+				<HeroSection onMenuClick={() => menuOpened ? setMenuOpened(false) : setMenuOpened(true)}/>
 				<TechStack />
 				<DevCycle />
 				<Industries />
@@ -34,6 +46,7 @@ export default function Home() {
 				<Testimonials />
 				<Footer />
 			</main>
+			<SideMenu opened={menuOpened} onClose={() => setMenuOpened(false)}/>
 		</div>
 	);
 }

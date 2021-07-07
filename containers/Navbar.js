@@ -1,9 +1,9 @@
 import React from 'react';
 import Image from 'next/image';
 
-const Navbar = () => {
+const Navbar = ({onMenuClick}) => {
 	return (
-		<nav className="flex flex-row bg-purple p-4 md:p-6 bg-hero-pattern bg-cover bg-center">
+		<nav className="flex flex-row bg-transparent p-4 md:p-6">
 			<div className="flex flex-row items-center">
 				<Image
 					src="/svg/octave_logo.svg"
@@ -14,7 +14,7 @@ const Navbar = () => {
 				<p className="ml-2 font-bold">Octave Systems</p>
 			</div>
 
-			<button className="flex flex-row items-center ml-auto">
+			<button className="flex flex-row items-center ml-auto outline:none text-white" onClick={() => onMenuClick()}>
 				Menu &nbsp;
 				<Image src="/svg/menu.svg" height="16px" width="22px" />
 			</button>

@@ -5,11 +5,11 @@ import Image from 'next/image';
 import BusinessIcons from '../components/BusinessIcons';
 import Navbar from './Navbar';
 
-const HeroSection = () => {
+const HeroSection = ({onMenuClick}) => {
 	return (
 		<div className="bg-purple bg-hero-pattern bg-cover bg-center">
-			<Navbar />
-			<div className="p-4 md:p-6 h-full md:h-screen md:flex md:flex-row">
+			<Navbar onMenuClick={onMenuClick}/>
+			<div className="p-4 md:p-10 h-full md:flex md:flex-row text-white">
 				<section className="md:w-6/12 m-auto">
 					<p className="font-bold text-grey-200">WE DESIGN UX/UI</p>
 					<h1 className="text-4xl md:text-6xl mb-4 mt-2">
