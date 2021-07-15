@@ -7,7 +7,7 @@ import Navbar from './Navbar';
 
 const HeroSection = ({onMenuClick}) => {
 	return (
-		<div className="bg-purple bg-hero-pattern bg-cover bg-center">
+		<div className="animate-pul bg-purple bg-hero-pattern bg-cover bg-center">
 			<Navbar onMenuClick={onMenuClick}/>
 			<div className="p-4 md:p-10 h-full md:flex md:flex-row text-white">
 				<section className="md:w-6/12">
@@ -37,8 +37,8 @@ const HeroSection = ({onMenuClick}) => {
 					<BusinessIcons />
 				</section>
 				<section className="md:w-6/12 flex flex-row justify-center items-center">
-					<div className="">
-						<img src="/hero_alt.png"/>
+					<div className="mt-10 md:mt-0">
+						<Image src="/svg/mobile_ui.svg" height="500px" width="auto"/>
 					</div>
 				</section>
 			</div>

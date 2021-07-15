@@ -15,7 +15,7 @@ const Navbar = ({onMenuClick}) => {
 			</div>
 
 			<button className="flex flex-row items-center ml-auto outline:none text-white" onClick={() => onMenuClick()}>
-				Menu &nbsp;
+				Menu &nbsp;&nbsp;
 				<Image src="/svg/menu.svg" height="16px" width="22px" />
 			</button>
 		</nav>
