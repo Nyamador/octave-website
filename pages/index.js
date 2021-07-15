@@ -2,6 +2,7 @@ import { useState, useEffect } from 'react';
 import Head from 'next/head';
 import Image from 'next/image';
 
+import Layout from '../containers/Layout'
 import HeroSection from '../containers/HeroSection';
 import SideMenu from '../containers/SideMenu'
 import TechStack from '../containers/TechStack';
@@ -22,6 +23,7 @@ export default function Home() {
 		}
 	}, [menuOpened])
 
+
 	return (
 		<div>
 			<Head>
@@ -37,7 +39,7 @@ export default function Home() {
 				></link>
 			</Head>
 
-			<main>
+			<Layout>
 				<HeroSection onMenuClick={() => menuOpened ? setMenuOpened(false) : setMenuOpened(true)}/>
 				<TechStack />
 				<DevCycle />
@@ -45,7 +47,7 @@ export default function Home() {
 				<Team />
 				<Testimonials />
 				<Footer />
-			</main>
+			</Layout>
 			<SideMenu opened={menuOpened} onClose={() => setMenuOpened(false)}/>
 		</div>
 	);

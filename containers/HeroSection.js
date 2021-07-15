@@ -10,7 +10,7 @@ const HeroSection = ({onMenuClick}) => {
 		<div className="bg-purple bg-hero-pattern bg-cover bg-center">
 			<Navbar onMenuClick={onMenuClick}/>
 			<div className="p-4 md:p-10 h-full md:flex md:flex-row text-white">
-				<section className="md:w-6/12 m-auto">
+				<section className="md:w-6/12">
 					<p className="font-bold text-grey-200">WE DESIGN UX/UI</p>
 					<h1 className="text-4xl md:text-6xl mb-4 mt-2">
 						Building digital <br></br> products, brands, <br></br> and
@@ -36,7 +36,11 @@ const HeroSection = ({onMenuClick}) => {
 
 					<BusinessIcons />
 				</section>
-				<section className="md:w-6/12"></section>
+				<section className="md:w-6/12 flex flex-row justify-center items-center">
+					<div className="">
+						<img src="/hero_alt.png"/>
+					</div>
+				</section>
 			</div>
 		</div>
 	);

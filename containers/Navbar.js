@@ -3,7 +3,7 @@ import Image from 'next/image';
 
 const Navbar = ({onMenuClick}) => {
 	return (
-		<nav className="flex flex-row bg-transparent p-4 md:p-6">
+		<nav className="flex flex-row bg-transparent p-4 md:p-10">
 			<div className="flex flex-row items-center">
 				<Image
 					src="/svg/octave_logo.svg"
@@ -11,7 +11,7 @@ const Navbar = ({onMenuClick}) => {
 					width="20px"
 				/>
 
-				<p className="ml-2 font-bold">Octave Systems</p>
+				<p className="text-white ml-2 font-bold">Octave Systems</p>
 			</div>
 
 			<button className="flex flex-row items-center ml-auto outline:none text-white" onClick={() => onMenuClick()}>

@@ -2,7 +2,7 @@ import React from 'react';
 
 const Footer = () => {
 	return (
-		<footer className="h-auto bg-purple p-4 md:p-6 md:p-20 text-white">
+		<footer className="h-auto bg-purple p-4 md:p-10 text-white">
 			<div className="md:h-1/2 mb-12">
 				<h3 className="text-2xl md:text-6xl md:mb-4">Got a project idea?</h3>
 				<p className="md:text-4xl">Let's talk about it.</p>
@@ -11,7 +11,7 @@ const Footer = () => {
 			<div className="flex flex-col md:flex-row">
 				<div className="w-6/12">
 					<a href="mailto:hello@octavesystems.com" className="md:text-xl leading-snug underline hover:no-underline">
-						<p className="font-light">hello@octavesystems.com</p>
+						<p className="text-sm font-light">hello@octavesystems.com</p>
 					</a>
 
 				</div>
