@@ -18,7 +18,7 @@ const Layout = ({children}) => {
             <div className="relative overflow-hidden">
                 <div className="absolute bg-lightPurple bg-opacity-40 rounded-full w-8 h-8 pointer-events-none" style={{
                     'transform': `translate3d(${cursorPos.x} ,${cursorPos.y}, 0)`,
-                    'z-index': '111',
+                    'zIndex': '111',
                     'transition': 'transform 1s cubic-bezier(.02,1.2,.8,1),opacity .25s ease'
                 }} />
                 {children}

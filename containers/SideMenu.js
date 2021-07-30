@@ -15,6 +15,15 @@ const SideMenu = ({ opened, onClose }) => {
             }}>
             </section>
             <section className="w-full md:w-6/12 ml-auto bg-white">
+                <div className="p-2" onClick={() => {
+                    setIsOpen(false)
+                    onClose()
+                }}>
+                    <img src="/svg/times-circle.svg" className="ml-auto" height="35px" width="35px"/>
+                </div>
+                <p className="text-center">
+                    Coming soon
+                </p>
             </section>
         </aside>
     );
