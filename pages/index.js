@@ -1,26 +1,7 @@
-import { useState, useEffect } from "react";
 import Head from "next/head";
 import Image from "next/image";
 
-import Layout from "../containers/Layout";
-import HeroSection from "../containers/HeroSection";
-import SideMenu from "../containers/SideMenu";
-import TechStack from "../containers/TechStack";
-import DevCycle from "../containers/DevCycle";
-import Industries from "../containers/Industries";
-import Team from "../containers/Team";
-import Testimonials from "../containers/Testimonials";
-import Footer from "../containers/Footer";
-
 export default function Home() {
-  const [menuOpened, setMenuOpened] = useState(false);
-
-  useEffect(() => {
-    menuOpened
-      ? (document.classList = "overflow-hidden")
-      : (document.classList = "");
-  }, [menuOpened]);
-
   return (
     <div>
       <Head>
@@ -33,20 +14,19 @@ export default function Home() {
         ></link>
       </Head>
 
-      <Layout>
-        <HeroSection
-          onMenuClick={() =>
-            menuOpened ? setMenuOpened(false) : setMenuOpened(true)
-          }
-        />
-        <TechStack />
-        <DevCycle />
-        <Industries />
-        <Team />
-        <Testimonials />
-        <Footer />
-      </Layout>
-      <SideMenu opened={menuOpened} onClose={() => setMenuOpened(false)} />
+      <div className="flex flex-row items-center justify-center h-screen bg-black">
+        <div className="flex flex-col items-center">
+          <Image
+            src="/logo.svg"
+            alt="Octave Logo"
+            height="100px"
+            width="auto"
+          />
+          <p className="mt-10 text-white">
+            Octave Systems - Website under construction
+          </p>
+        </div>
+      </div>
     </div>
   );
 }
