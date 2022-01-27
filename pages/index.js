@@ -20,7 +20,7 @@ export default function Home() {
       </Head>
 
       <header className="p-4 text-white bg-black md:p-0">
-        <nav className="flex flex-row md:w-11/12 md:m-auto md:py-6">
+        <nav className="flex flex-row py-6 mb-10 md:w-11/12 md:m-auto md:mb-0">
           <div className="flex flex-row items-center">
             <Image
               src="/svg/logo.svg"
@@ -125,12 +125,12 @@ export default function Home() {
         </div>
       </section>
 
-      <section className="py-10 bg-yellow-50">
+      <section className="p-4 md:py-10 bg-yellow-50">
         <div className="md:w-11/12 md:m-auto">
           <h3 className="mb-10 font-serif text-2xl text-yellow-700 md:text-4xl">
             Our Recent Projects
           </h3>
-          <div className="flex md:flex-row">
+          <div className="flex flex-col md:flex-row">
             <div className="md:w-6/12">
               <h4 className="mb-4 text-3xl text-yellow-700">Boom Supersonic</h4>
               <p className="w-10/12 mb-10 text-sm text-yellow-600">
@@ -141,7 +141,7 @@ export default function Home() {
                 education & speaking opportunities as well as a design lead for
                 projects of all sizes. Thanks for everything you do!
               </p>
-              <button className="flex flex-row px-6 py-4 text-white bg-yellow-700 rounded-md">
+              <button className="flex flex-row px-6 py-4 mb-10 text-white bg-yellow-700 rounded-md md:mb-0">
                 View Case Study &nbsp;&nbsp; <Unicons.UilArrowRight />
               </button>
             </div>
@@ -156,13 +156,13 @@ export default function Home() {
           </div>
         </div>
       </section>
-      <section className="py-10 bg-green-800">
+      <section className="p-4 bg-green-800 md:py-10">
         <div className="md:w-11/12 md:m-auto">
-          <div className="flex md:flex-row">
-            <div className="mr-10 md:w-6/12">
+          <div className="flex flex-col md:flex-row">
+            <div className="order-2 mr-10 md:w-6/12 md:order-1">
               <img src="/svg/dummy_2.png" title="" height="auto" width="auto" />
             </div>
-            <div className="md:w-6/12">
+            <div className="order-1 md:w-6/12 md:order-2">
               <h4 className="mb-4 text-3xl text-green-300">Green Robotics</h4>
               <p className="w-10/12 mb-10 text-sm text-green-300">
                 Octave is by far my favourite UX/UI designer and creative
@@ -172,7 +172,7 @@ export default function Home() {
                 education & speaking opportunities as well as a design lead for
                 projects of all sizes. Thanks for everything you do!
               </p>
-              <button className="flex flex-row px-6 py-4 text-green-800 bg-green-300 rounded-md">
+              <button className="flex flex-row px-6 py-4 mb-10 text-green-800 bg-green-300 rounded-md">
                 View Case Study &nbsp;&nbsp; <Unicons.UilArrowRight />
               </button>
             </div>
@@ -180,7 +180,7 @@ export default function Home() {
         </div>
       </section>
 
-      <section className="flex flex-col py-4 md:py-10 md:flex-row">
+      <section className="flex flex-col p-4 py-4 md:py-10 md:flex-row">
         <div className="m-auto md:w-11/12">
           <div className="md:w-7/12">
             <h3 className="mb-4 font-serif text-2xl md:text-4xl">
@@ -218,7 +218,7 @@ export default function Home() {
       </section>
 
       <footer className="py-4 text-white bg-black md:py-10">
-        <div className="md:w-11/12 md:m-auto">
+        <div className="p-6 md:w-11/12 md:m-auto md:p-0">
           <section className="mb-10 md:flex md:flex-row">
             <div className="md:w-1/2">
               <h6 className="text-3xl md:text-6xl md:mb-2">Got an Idea?</h6>
