@@ -26,7 +26,7 @@ button:active {
 }
 
 ::selection {
-  background-color: rgba(124, 0, 255, 0.1);
+  background-color: rgba(187, 187, 187, 0.1);
 }
 /* Chrome, Safari, Edge, Opera */
 input::-webkit-outer-spin-button,
@@ -44,12 +44,12 @@ textarea {
   resize: none;
 }
 ::-webkit-scrollbar {
-  width: 10px;
+  width: 4px;
   background-color: transparent;
 }
 
 ::-webkit-scrollbar-thumb {
-  background-color: #441a47;
+  background-color: #7c7c7c;
   border-radius: 12px;
 }
 
