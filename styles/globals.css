@@ -21,6 +21,10 @@ a {
   box-sizing: border-box;
 }
 
+button:active {
+  transform: scale(0.98);
+}
+
 ::selection {
   background-color: rgba(124, 0, 255, 0.1);
 }
