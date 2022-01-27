@@ -1,6 +1,7 @@
 import Head from "next/head";
 import Image from "next/image";
 import * as Unicons from "@iconscout/react-unicons";
+import Link from "next/link";
 
 import Input from "../components/Input";
 import TextArea from "../components/TextArea";
@@ -124,6 +125,43 @@ export default function Home() {
         </section>
       </div>
 
+      <section className="flex flex-col py-4 md:py-10 md:flex-row">
+        <div className="m-auto md:w-11/12">
+          <div className="md:w-7/12">
+            <h3 className="mb-4 font-serif text-2xl md:text-4xl">
+              Testimonials
+            </h3>
+
+            <div>
+              <p className="mb-10 text-gray-500">
+                Octave is by far my favourite UX/UI design and creative company.
+                Working with them is always an amazing experience. Their design
+                vision is out of this world and they pours their heart and soul
+                into every project. Highly recommended for UI/UX education &
+                speaking opportunities. Thanks for everything you do!
+              </p>
+              <div className="mb-6">
+                <p className="font-bold">Damien Smith</p>
+                <p>Boost Finance</p>
+              </div>
+
+              <div
+                className="p-2 border-2 border-yellow-400 rounded-full"
+                style={{ height: "200px", width: "200px" }}
+              >
+                <Image
+                  src="/svg/testimonial_dummy.png"
+                  alt=""
+                  height="200"
+                  width="200"
+                />
+              </div>
+            </div>
+          </div>
+          <div className="md:w-3/2"></div>
+        </div>
+      </section>
+
       <footer className="py-4 text-white bg-black md:py-10">
         <div className="md:w-11/12 md:m-auto">
           <section className="mb-10 md:flex md:flex-row">
@@ -164,7 +202,28 @@ export default function Home() {
           <hr className="my-4 border-gray-500" />
 
           <div className="flex flex-row">
-            <div></div>
+            <div className="flex flex-row items-center">
+              <Link href="">
+                <a className="mr-2">
+                  <Unicons.UilGithubAlt />
+                </a>
+              </Link>
+              <Link href="">
+                <a className="mr-2">
+                  <Unicons.UilTwitterAlt />
+                </a>
+              </Link>
+              <Link href="">
+                <a className="mr-2">
+                  <Unicons.UilLinkedinAlt />
+                </a>
+              </Link>
+              <Link href="">
+                <a className="mr-2">
+                  <Unicons.UilInstagram />
+                </a>
+              </Link>
+            </div>
 
             <div className="ml-auto">
               <p className="flex flex-row items-center text-sm">
