@@ -1,14 +1,24 @@
+import { useState, useEffect } from "react";
 import Head from "next/head";
 import Image from "next/image";
 import * as Unicons from "@iconscout/react-unicons";
 import Link from "next/link";
+import { gsap } from "gsap";
 
 import Input from "../components/Input";
 import TextArea from "../components/TextArea";
 
 export default function Home() {
+  const [cursorPos, setCursorPos] = useState({ x: "0px", y: "0px" });
+
+  useEffect(() => {
+    document.addEventListener("mousemove", (e) => {
+      setCursorPos({ x: `${e.pageX}px`, y: `${e.pageY}px` });
+    });
+  }, []);
+
   return (
-    <>
+    <main className="relative">
       <Head>
         <title>Octave Systems </title>
         <link rel="preconnect" href="https://fonts.googleapis.com" />
@@ -43,18 +53,31 @@ export default function Home() {
               <h1 className="mb-4 font-serif text-2xl md:text-4xl">
                 Building digital products, brands, and experiences
               </h1>
-              <p>
+              <p className="text-gray-500">
                 We transform your business problems into beautiful creative
                 solutions. Let us help you tell your story
               </p>
-              <button className="flex flex-row py-2 border-b border-white">
+              <button
+                className="flex flex-row py-2 border-b border-white"
+                onMouseEnter={(currentTarget) =>
+                  gsap.to(currentTarget, { color: "red" })
+                }
+                onMouseLeave={(currentTarget) =>
+                  gsap.to(currentTarget, { border: "1px solid white" })
+                }
+              >
                 Connect with us <Unicons.UilArrowRight />
               </button>
 
-              <div
-                className="w-full mt-10 mb-4 rounded-md md:mb-0 bg-gray-50"
-                style={{ height: "400px" }}
-              ></div>
+              <div className="w-full mt-10 mb-4 rounded-md md:mb-0 bg-gray-50">
+                <img
+                  className="rounded-md"
+                  src="/man_with_device.jpg"
+                  height="400"
+                  width="auto"
+                  alt=""
+                />
+              </div>
             </section>
 
             <section className="md:w-1/2">
@@ -257,7 +280,7 @@ export default function Home() {
           <hr className="my-4 border-gray-500" />
 
           <div className="flex flex-row">
-            <div className="flex flex-row items-center">
+            <div className="flex flex-row items-center text-gray-300">
               <Link href="">
                 <a className="mr-2">
                   <Unicons.UilGithubAlt />
@@ -288,6 +311,16 @@ export default function Home() {
           </div>
         </div>
       </footer>
-    </>
+
+      <div
+        className="absolute w-8 h-8 bg-gray-100 rounded-full pointer-events-none bg-opacity-40"
+        style={{
+          transform: `translate3d(${cursorPos.x} ,${cursorPos.y}, 0)`,
+          zIndex: "111",
+          transition:
+            "transform 1s cubic-bezier(.02,1.2,.8,1),opacity .25s ease",
+        }}
+      />
+    </main>
   );
 }

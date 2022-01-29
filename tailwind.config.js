@@ -19,6 +19,15 @@ module.exports = {
       keyframes: {
         animation: {
           pul: "bgpulse 2s ease-in-out infinite",
+          menurotate: "",
+        },
+        animatemenu: {
+          "0%": {
+            filter: "hue-rotate(0deg)",
+          },
+          "100%": {
+            filter: "hue-rotate(360deg)",
+          },
         },
         bgpulse: {
           "0% 100%": {
