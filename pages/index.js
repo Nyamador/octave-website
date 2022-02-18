@@ -3,19 +3,19 @@ import Head from "next/head";
 import Image from "next/image";
 import * as Unicons from "@iconscout/react-unicons";
 import Link from "next/link";
-import { gsap } from "gsap";
+// import { gsap } from "gsap";
 
 import Input from "../components/Input";
 import TextArea from "../components/TextArea";
 
 export default function Home() {
-  const [cursorPos, setCursorPos] = useState({ x: "0px", y: "0px" });
+  // const [cursorPos, setCursorPos] = useState({ x: "0px", y: "0px" });
 
-  useEffect(() => {
-    document.addEventListener("mousemove", (e) => {
-      setCursorPos({ x: `${e.pageX}px`, y: `${e.pageY}px` });
-    });
-  }, []);
+  // useEffect(() => {
+  //   document.addEventListener("mousemove", (e) => {
+  //     setCursorPos({ x: `${e.pageX}px`, y: `${e.pageY}px` });
+  //   });
+  // }, []);
 
   return (
     <main className="relative">
@@ -57,15 +57,7 @@ export default function Home() {
                 We transform your business problems into beautiful creative
                 solutions. Let us help you tell your story
               </p>
-              <button
-                className="flex flex-row py-2 border-b border-white"
-                onMouseEnter={(currentTarget) =>
-                  gsap.to(currentTarget, { color: "red" })
-                }
-                onMouseLeave={(currentTarget) =>
-                  gsap.to(currentTarget, { border: "1px solid white" })
-                }
-              >
+              <button className="flex flex-row py-2 border-b border-white">
                 Connect with us <Unicons.UilArrowRight />
               </button>
 
@@ -312,7 +304,7 @@ export default function Home() {
         </div>
       </footer>
 
-      <div
+      {/* <div
         className="absolute w-8 h-8 bg-gray-100 rounded-full pointer-events-none bg-opacity-40"
         style={{
           transform: `translate3d(${cursorPos.x} ,${cursorPos.y}, 0)`,
@@ -320,7 +312,7 @@ export default function Home() {
           transition:
             "transform 1s cubic-bezier(.02,1.2,.8,1),opacity .25s ease",
         }}
-      />
+      /> */}
     </main>
   );
 }
